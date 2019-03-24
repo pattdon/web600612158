@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .cities {
+          border: 1px solid black;
+          border-collapse: collapse;
+          margin: 30px;
+          padding: 10px;
+        }
+
+        .inside {
+          border: 1px solid white;
+          border-collapse: collapse;
+          margin: 23px;
+          padding: 20px;
+          display: block;
+          margin-top: 1%;
+          margin-bottom: 1%;
+          margin-left: 1%;
+          margin-right: 5%;
+        }
+
+        
+        .insideImagine {
+          border: 1px solid white;
+          border-collapse: collapse;
+          margin: 23px;
+          padding: 2px;
+          display: block;
+          margin-top: 10%;
+          margin-bottom: 10%;
+          margin-left: 200%;
+          margin-right: 1%;
+        }
+
+        .text {
+          border: 1px solid white;
+          border-collapse: collapse;
+          margin: 23px;
+          padding: 20px;
+          display: block;
+          margin-top: 0.001%;
+          margin-bottom: 0.5%;
+          margin-left: 1%;
+          margin-right: 0;
+        }
+
+        .text1 {
+          border: 1px solid white;
+          border-collapse: collapse;
+          margin: 23px;
+          padding: 20px;
+          display: block;
+          margin-top: 1%;
+          margin-bottom: 0.5%;
+          margin-left:  120%;
+          margin-right: 10%;
+        }
+
+        .text2 {
+          border: 1px solid white;
+          border-collapse: collapse;
+          margin: 23px;
+          padding: 20px;
+          display: block;
+          margin-top: 0.001%;
+          margin-bottom: 0.5%;
+          margin-left: 110%;
+          margin-right: 10%;
+        }
+
+        .text3 {
+          border: 1px solid white;
+          border-collapse: collapse;
+          margin: 23px;
+          padding: 20px;
+          display: block;
+          margin-top: 0.001%;
+          margin-bottom: 0.5%;
+          margin-left: 110%;
+          margin-right: 0;
+        }
+
+        .text4 {
+          border: 1px solid white;
+          border-collapse: collapse;
+          margin: 23px;
+          padding: 20px;
+          display: block;
+          margin-top: 0.001%;
+          margin-bottom: 0.5%;
+          margin-left: 1%;
+          margin-right: 40%;
+        }
+
+
+
+        .text6 {
+          border: 1px solid white;
+          border-collapse: collapse;
+          margin: 23px;
+          padding: 20px;
+          display: block;
+          margin-top: 0.001%;
+          margin-bottom: 0.5%;
+          margin-left: 1%;
+          margin-right: 50%;
+        }
+
+        
+        .text7 {
+          border: 1px solid white;
+          border-collapse: collapse;
+          margin: 1px;
+          padding: 20px;
+          display: block;
+          margin-top: 0.001%;
+          margin-bottom: 0.5%;
+          margin-left: 1%;
+          margin-right: 50%;
+        }
+
+
+
+        .text8 {
+          border: 1px solid white;
+          border-collapse: collapse;
+          margin: 23px;
+          padding: 20px;
+          display: block;
+          margin-top: 0.001%;
+          margin-bottom: 0.5%;
+          margin-left: 1%;
+          margin-right: 50%;
+        }
+
+        .text9 {
+          border: 1px solid white;
+          border-collapse: collapse;
+          margin: 23px;
+          padding: 100px;
+          display: block;
+          margin-top: 0.001%;
+          margin-bottom: 0.5%;
+          margin-left: 20%;
+          margin-right: 0;
+        }
+
+        .text10 {
+          border: 1px solid white;
+          border-collapse: collapse;
+          margin: 23px;
+          padding: 20px;
+          display: block;
+          margin-top: 0;
+          margin-bottom: 0.5%;
+          margin-left: 20%;
+          margin-right: 0;
+        }
+    </style>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="main1.0.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery1.0.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact1.0.html">contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+      <!--Carousel Wrapper-->
+<div id="video-carousel-example" class="carousel slide carousel-fade" data-ride="carousel">
+  <!--Indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#video-carousel-example" data-slide-to="0" class="active"></li>
+    <li data-target="#video-carousel-example" data-slide-to="1"></li>
+    <li data-target="#video-carousel-example" data-slide-to="2"></li>
+  </ol>
+  <!--/.Indicators-->
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <video class="video-fluid" autoplay loop muted>
+        <source src="https://mdbootstrap.com/img/video/Tropical.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="carousel-item">
+      <video class="video-fluid" autoplay loop muted>
+        <source src="https://mdbootstrap.com/img/video/forest.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="carousel-item">
+      <video class="video-fluid" autoplay loop muted>
+        <source src="https://mdbootstrap.com/img/video/Agua-natural.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </div>
+  <!--/.Slides-->
+  <!--Controls-->
+  <a class="carousel-control-prev" href="#video-carousel-example" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#video-carousel-example" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  <!--/.Controls-->
+</div>
+<!--Carousel Wrapper-->
+
+
+
+
+
+    <div class="cities">
+        <table>
+        <tr>
+          <th><div class="inside">
+             <h1>Pattadon nutes</h1>
+             <h2>Web Developer</h2>
+             <h3><a href="main1.0.html">1999pattadontime@gmail.com</a></h3>
+             <h3>088-242-5636</h3>
+           </div></th>
+           
+          <th>
+            <div class="insideImagine">
+                <img src="22046556_1548343098558915_7823833958663710625_n.jpg" alt="W3Schools.com" width="300" height="300">
+            </div>
+          </th>
+
+        </tr>
+
+      </table>
+    </div>
+
+    <div class="cities">
+       <table>
+         <tr>
+           <th>
+             <h2>Profile</h2>
+           </th>
+
+           <th>
+             <div class="text">
+               <p>you know me with my concept or code name. we love some people with love of human but we love enemy.I am pattadon nutes number 600612158</p>
+             </div>
+           </th>
+         </tr>
+       </table>
+
+       <table>
+         <tr>
+           <th>
+             <div class="text1">
+               <h2>c++ language</h2>
+             </div>
+           </th>
+
+           <th>
+              <div class="text2">
+                  <h2>java language</h2>
+              </div>
+           </th>
+
+           <th>
+              <div class="text3">
+                  <h2>C# language</h2>
+              </div>
+           </th>
+         </tr>
+
+        <tr>
+          <th>
+                  <h2 align="left" >skills</h2>
+          </th>
+
+         <th>
+            <div class="text6">
+              <p>in c++ language we have Advantage skill.we can write oop  it useful to develop in future and data structure can help to progream work faster</p>
+            </div>
+          </th>
+
+          <th>
+            <div class="text7">
+              <p>java language we have Advantage skill.we can write oop  it useful to develop in future and data structure can help to progream work faster</p>
+            </div>
+          </th>
+
+          <th>
+            <div class="text8">
+              <p>C#  language we have Advantage skill.we can write oop  it useful to develop in future and data structure can help to progream work faster</p>
+            </div>
+          </th>
+        </tr>
+
+        <tr>
+            <th>
+                <h2 align="left" >Technial</h2>
+            </th>
+
+       <td>
+          <div class="text6">
+            <p>complex meta-programming
+                complex APIs
+                complex reverse engineering
+                AI
+                interpreters
+                expert regex/string parsing
+                expert design patterns? </p>
+          </div>
+        </td>
+
+        <td>
+          <div class="text7">
+            <p>complex design patterns
+                complex regex
+                complex detailed requirements
+                simple reverse engineering
+                intermediate meta-programming
+                simple APIs</p>
+          </div>
+        </td>
+
+        <td>
+          <div class="text8">
+
+            <p> complex language features
+                simple algorithms
+                complex algorithms
+                simple design patterns
+                simple regex
+                simple detailed requirements</p>
+          </div>
+        </td>
+        </tr>
+       </table>
+
+       <table>
+         <tr>
+           <th>
+             <h2 align="left">Experience</h2>
+           </th>
+           <td>
+             <p align="center">::Kata black (master)</p> 
+           </td>
+         </tr>
+
+       </table>
+
+       <table>
+         <tr>
+           <th>
+             <h2 align="left">Education</h2>
+           </th>
+
+           <td>
+               <p align="center">::assumption college thonburi</p>
+          </td>
+
+         </tr>
+
+       </table>
+
+       <footer><p align="center">pattadon nutes 1999pattadontime@gmail.com---(+66)-088-242-5636</p></footer>
+    </div>
+
+</body>
+</html>
